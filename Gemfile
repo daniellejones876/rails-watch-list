@@ -48,6 +48,7 @@ gem 'autoprefixer-rails'
 gem 'bootstrap', '~> 5.2'
 gem 'font-awesome-sass', '~> 6.1'
 gem 'simple_form'
+gem 'faker'
 
 # Use Sass to process CSS
 gem 'sassc-rails'

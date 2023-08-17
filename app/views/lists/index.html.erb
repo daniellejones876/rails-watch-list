@@ -4,7 +4,7 @@
       <% @lists.each do |list| %>
         <div class="card col-4" style="width: 20rem;">
           <div class="card-body ">
-            <img src="<%= list.image_url %>" class="card-img-top" alt="...">
+            <img src='https://source.unsplash.com/random/?movie/200x200' class="card-img-top" alt="...">
             <div class="d-flex justify-content-between">
               <h5 class="card-title"><%= link_to list.name, list_path(list)%></h5>
               <i class="fa-solid fa-film"></i>

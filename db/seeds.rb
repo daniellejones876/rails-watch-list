@@ -7,12 +7,7 @@ Movie.destroy_all
 List.destroy_all
 
 # Create some lists
-3.times do
-  List.create!(
-    name: Faker::Creature::Cat.name,
-    image_url: %w[https://unsplash.com/photos/fIq0tET6llw https://unsplash.com/photos/UBhpOIHnazM https://unsplash.com/photos/ukzHlkoz1IE].sample
-  )
-end
+
 
 puts "Created #{List.count} movie lists 📝"
 
