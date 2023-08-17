@@ -1,0 +1,11 @@
+<div class="container p-4">
+<h1>New List 📝</h1>
+<%= simple_form_for @list do |f| %>
+  <div class="form-inputs form-control">
+    <%= f.input :name %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+</div>

@@ -1,0 +1,17 @@
+<div class="container bg-light mt-3">
+  <h1>Movie Lists 🍿</h1>
+    <div class="row gap-2 border-bottom">
+      <% @lists.each do |list| %>
+        <div class="card col-4" style="width: 20rem;">
+          <div class="card-body ">
+            <img src="<%= list.image_url %>" class="card-img-top" alt="...">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title"><%= link_to list.name, list_path(list)%></h5>
+              <i class="fa-solid fa-film"></i>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <%= link_to "Add new list", lists_new_path, class: 'btn btn-light mt-3' %>
+</div>
