@@ -1,5 +1,15 @@
-<div class="container bg-light mt-3">
-  <h1>Movie Lists 🍿</h1>
+<nav class="bg-gradient">
+  <div class="container d-flex justify-content-between p-2">
+    <%= link_to "🍿 Home", lists_path, class: "btn text-white" %>
+  </div>
+</nav>
+<div class="container">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1595769816263-9b910be24d5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bW92aWV8fHx8fHwxNjkyMzY0MzE5&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080')"></div>
+  <h1>🍿 Movie Lists</h1>
+  <%= link_to "Create new list", lists_new_path, class: 'btn btn-light mt-3' %>
+
+
+
     <div class="row gap-2 border-bottom">
       <% @lists.each do |list| %>
         <div class="card col-4" style="width: 20rem;">
@@ -13,5 +23,4 @@
         </div>
       <% end %>
     </div>
-  <%= link_to "Add new list", lists_new_path, class: 'btn btn-light mt-3' %>
 </div>
