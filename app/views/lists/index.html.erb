@@ -5,22 +5,23 @@
 </nav>
 <div class="container">
   <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1595769816263-9b910be24d5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bW92aWV8fHx8fHwxNjkyMzY0MzE5&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080')"></div>
-  <h1>🍿 Movie Lists</h1>
-  <%= link_to "Create new list", lists_new_path, class: 'btn btn-light mt-3' %>
-
-
-
-    <div class="row gap-2 border-bottom">
+    <h1>🍿 Movie Lists</h1>
+    <p class='lead'>· Categorize your movie moods ·</p>
+    <%= link_to "Create new list", lists_new_path, class: 'btn btn-light mt-3' %>
+  </div>
+  <div class="container">
+    <div class="row gap-2">
       <% @lists.each do |list| %>
         <div class="card col-4" style="width: 20rem;">
           <div class="card-body ">
             <img src='https://source.unsplash.com/random/?movie/200x200' class="card-img-top" alt="...">
-            <div class="d-flex justify-content-between">
-              <h5 class="card-title"><%= link_to list.name, list_path(list)%></h5>
-              <i class="fa-solid fa-film"></i>
+            <div class="d-flex justify-content-between p-2">
+              <h4 class="card-title"><%= link_to list.name, list_path(list), class: "btn text-white"%></h4>
+              <i class="fa-solid fa-film p-2"></i>
             </div>
           </div>
         </div>
       <% end %>
     </div>
+  </div>
 </div>
