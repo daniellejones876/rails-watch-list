@@ -6,9 +6,7 @@ require 'json'
 Movie.destroy_all
 List.destroy_all
 
-# Create some lists
-
-
+List.create!('Drama')
 puts "Created #{List.count} movie lists 📝"
 
 Movie.create(title: 'Wonder Woman 1984',
