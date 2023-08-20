@@ -12,7 +12,7 @@
     <div class="row gap-2 my-2">
       <% @list.bookmarks.each do |bookmark| %>
       <div class="card bg-gradient col-4" style="width: 20rem">
-        <img src="<%= bookmark.movie.poster_url %>" class='card-img-top img-crop'/>
+        <img src="<%= bookmark.movie.poster_url %>" class='card-img-top'/>
         <div class="card-body text-white">
           <div class="d-flex justify-content-between">
             <h5><strong><%= bookmark.movie.title %></strong></h5>
